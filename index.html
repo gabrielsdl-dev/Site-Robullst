@@ -1,57 +1,87 @@
 <html lang="pt-br">
-    <head> 
-        <link href="estilos.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <meta charset = "UTF-8">
-        <title> ROBULLST </title>
-        <script>
-            alert('Bem vindo ao nosso site!');
-        </script>
-    </head>
-    <body>
-        <header> 
-            <div>
-                <!-- logo-->
-                <img src="IMG/robullst_branco.png" title="ROBULLST" class="logo"/>
-                 
-                <nav>
-                    <ul>
-                        <!--Itens do menu-->
-                        <li>Home</li>
-                        <li>Produtos</li>
-                        <li>Contatos</li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-         <!--banner-->
-         <img src="IMG/modaesportiva.png" title= "Academia" class="img"/>
-        <main>
-            <section class="sobre_nos">
-            <h2>Sobre Nós</h2>
-            <img src ="IMG/img_sobrenos.png" class="img_sobrenos"/>
 
-            <p>Na Robullst, acreditamos que o esporte vai além da competição. Ele é uma expressão de superação, confiança e saúde. Nossa missão é inspirar você a alcançar seu melhor desempenho, com conforto e estilo em cada movimento.
-            Fundada por um grupo de apaixonados por esportes e inovação, a marca nasceu da necessidade de criar roupas esportivas que unissem tecnologia de ponta, design arrojado e funcionalidade.
-            Desde nossa primeira coleção, buscamos proporcionar a experiência perfeita tanto para o profissional quanto para o amador, com peças versáteis que se adaptam a todas as atividades físicas.
-            Nosso compromisso é com a qualidade. Trabalhamos com tecidos avançados que garantem respirabilidade, flexibilidade e durabilidade. Além disso, priorizamos práticas sustentáveis em nossa produção, sempre visando reduzir nosso impacto ambiental.
-            Seja na academia, na corrida ou no seu treino de yoga, a Move Sportwear é a escolha certa para quem não abre mão de conforto e estilo. Nossa visão é criar uma comunidade de pessoas que se desafiam a melhorar a cada dia, vestindo-se para conquistar seus objetivos.
-            Movimente-se com estilo. Movimente-se com Robullst.</p>    
-            </section>  
-            <!-- OSSO ESTABELECIMENTO--> 
-            <section class="mapaGeral"> 
-                <h2> Nosso Estabelecimento </h2>
-                <P>Veja no mapa a baixo como nos encontrar!</P>
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.643858206073!2d-46.476804123760424!3d-23.545308461004538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66dec98fb855%3A0xf2b061ffbcd2ecf8!2sNeo%20Qu%C3%ADmica%20Arena!5e0!3m2!1spt-BR!2sbr!4v1740608318139!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<head>
+    <link href="estilos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title> ROBULLST </title>
+    <script>
+        alert('Bem vindo ao nosso site!');
+    </script>
+</head>
+
+<body>
+    <header class="topo">
+        <div class="header-container">
+            <!--logo-->
+            <img src="IMG/robullst_branco.png" title="ROBULLST" class="logo" />
+
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <!--banner-->
+    <img src="IMG/modaesportiva.png" title="Academia" class="img" />
+
+    <!--sobre nós-->
+    <main>
+        <section class="sobre_nos">
+            <div class="sobre-nos-card">
+                <div class="texto-sobre-nos">
+                    <h2>Sobre Nós</h2>
+                    <p class="boasVindas"> Bem-vindo ao Espaço Visual Masculino </p>
+
+                    <p>Na Robullst, acreditamos que o esporte vai além da competição. Ele é uma expressão de superação,
+                        confiança e saúde. Nossa missão é inspirar você a alcançar seu melhor desempenho, com conforto e
+                        estilo em cada movimento.
+
+                        Fundada por um grupo de apaixonados por esportes e inovação, a marca nasceu da necessidade de
+                        criar roupas esportivas que unissem tecnologia de ponta, design arrojado e funcionalidade.
+                        Desde nossa primeira coleção, buscamos proporcionar a experiência perfeita tanto para o
+                        profissional quanto para o amador, com peças versáteis que se adaptam a todas as atividades
+                        físicas.
+
+                        Nosso compromisso é com a qualidade. Trabalhamos com tecidos avançados que garantem
+                        respirabilidade, flexibilidade e durabilidade. Além disso, priorizamos práticas sustentáveis em
+                        nossa produção, sempre visando reduzir nosso impacto ambiental.
+                        Seja na academia, na corrida ou no seu treino de yoga, a Move Sportwear é a escolha certa para
+                        quem não abre mão de conforto e estilo. Nossa visão é criar uma comunidade de pessoas que se
+                        desafiam a melhorar a cada dia, vestindo-se para conquistar seus objetivos.
+                        Movimente-se com estilo. Movimente-se com Robullst.
+                    </p>
                 </div>
-            </section>
-        </main>
-        <main>
-            <section class="nossosProdutos">
+                <img src="IMG/img_sobrenos.png" title="Academia" class="img-sobre-nos" />
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <!-- NOSSO ESTABELECIMENTO-->
+        <section class="mapaGeral">
+            <h2> Nosso Estabelecimento </h2>
+            <P>Veja no mapa a baixo como nos encontrar!</P>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7315.287463884494!2d-46.474229!3d-23.545313000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66dec98fb855%3A0xf2b061ffbcd2ecf8!2sNeo%20Qu%C3%ADmica%20Arena!5e0!3m2!1spt-BR!2sbr!4v1748473092629!5m2!1spt-BR!2sbr"
+                    width="650" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <div>
+            <section>
                 <h2> Nossos Produtos </h2>
-                
-                <ul class ="produtos">
+
+                <ul class="produtos">
                     <!--Itens do menu dos produtos-->
                     <li>Camisetas Masculinas</li>
                     <li>Camisetas Femininas</li>
@@ -59,59 +89,19 @@
                     <li>Regatas Femininas</li>
                     <li>Bonés</li>
                 </ul>
-
-                <img src ="IMG/img_produtos.png" class ="img_produtos"/>
-
+                <img src="IMG/img_produtos.png" class="img_produtos" />
             </section>
-        </main>
+        </div>
+    </main>
 
-        <!--produtos-->
-        <main>
-            <div class="container">
-                <div class="card">
-                    <img src="IMG/Produtos/1.png" alt="Produto 1">
-                    <h2>Robullst Echo</h2>
-                    <p>Design ousado, essência bruta — feita pra quem vive o treino com atitude.</p>
-                    <span class="preco">R$ 79,99</span>
-                </div>
-        
-                <div class="card">
-                    <img src="IMG/Produtos/2.png" alt="Produto 2">
-                    <h2>Robullst Athlete</h2>
-                    <p>Estilo que fala por si. A Robullst Athlete une atitude e tradição em uma estampa marcante. Feita para quem carrega força e autenticidade em cada movimento.</p>
-                    <span class="preco">R$ 79,99</span>
-                </div>
-        
-                <div class="card">
-                    <img src="IMG/Produtos/3.png" alt="Produto 3">
-                    <h2>Robullst Creed</h2>
-                    <p>A Robullst Creed carrega o código de quem constrói tudo no 
-                        Sangue. Suor. Respeito.</p>
-                    <span class="preco">R$ 79,99</span>
-                </div>
 
-                <div class="card">
-                    <img src="IMG/Produtos/4.png" alt="Produto 2">
-                    <h2>Robullst Shield Branco</h2>
-                    <p>A mente comanda. O boné acompanha. O Robullst Shield foi feito pra quem encara o mundo com foco, estilo e presença.
-                    Design limpo, essência bruta.</p>
-                    <span class="preco">R$ 119,99</span>
-                </div>
 
-                <div class="card">
-                    <img src="IMG/Produtos/5.png" alt="Produto 2">
-                    <h2>Robullst Shield Preto</h2>
-                    <p>A mente comanda. O boné acompanha. O Robullst Shield foi feito pra quem encara o mundo com foco, estilo e presença.
-                    Design limpo, essência bruta.</p>
-                    <span class="preco">R$ 119,99</span>
-                </div>
-            </div>
-        </main>
-        
-        <!-- Rodapé do site-->
-         <footer>
-            <img src="IMG/ROBULLST.png" alt="Logo" class="logo_rodape">
-            <p>Faça já o seu pedido: <a href="https://wa.me/5511992368297"><i class="fa fa-whatsapp"></i></a> (11) 99999-9999| <a href="https://instagram.com/techrobo_"><i class="fa fa-instagram"></i></a> @robullst</p>
-         </footer>
-    </body>
+    <!-- Rodapé do site-->
+    <footer>
+        <img src="IMG/ROBULLST.png" alt="Logo" class="logo_rodape">
+        <p>Faça já o seu pedido: <a href="https://wa.me/5511992368297"><i class="fa fa-whatsapp "></i></a> (11)
+            99999-9999| <a href="https://instagram.com/techrobo_"><i class="fa fa-instagram"></i></a> @robullst</p>
+    </footer>
+</body>
+
 </html>

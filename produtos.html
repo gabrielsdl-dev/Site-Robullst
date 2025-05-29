@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+
+
+    <script>
+        alert('BEM VINDO AO NOSSO CATÁLOGO');
+
+        dia = new Array("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
+        mes = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+        data = new Date
+
+        //POP_UP de detalhes do produto
+        function abrirDetalhes(nome, imagem, descricao) {
+            const url = `pop_servicos.html?nome=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(imagem)}&descricao=${encodeURIComponent(descricao)}`;
+            window.open(url, "_blank", "width=800,height=700");
+        }
+
+
+
+    </script>
+</head>
+
+<!--cabeçalho-->
+
+<body class="body_servicos">
+   <header class="topo">
+        <div class="header-container">
+            <!-- Logo centralizada -->
+            <img src="IMG/robullst_branco.png" title="Logo ROBULLST" class="logo_servicos" />
+
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+
+<body>
+    <!--produtos-->
+        <main>
+            <div class="container">
+                <div class="card">
+                    <img src="IMG/Produtos/1.png" alt="Produto 1">
+                    <h2>Robullst Echo</h2>
+                    <p>Design ousado, essência bruta — feita pra quem vive o treino com atitude.</p>
+                    <span class="preco">R$ 79,99</span>
+                </div>
+        
+                <div class="card">
+                    <img src="IMG/Produtos/2.png" alt="Produto 2">
+                    <h2>Robullst Athlete</h2>
+                    <p>Estilo que fala por si. A Robullst Athlete une atitude e tradição em uma estampa marcante. Feita para quem carrega força e autenticidade em cada movimento.</p>
+                    <span class="preco">R$ 79,99</span>
+                </div>
+        
+                <div class="card">
+                    <img src="IMG/Produtos/3.png" alt="Produto 3">
+                    <h2>Robullst Creed</h2>
+                    <p>A Robullst Creed carrega o código de quem constrói tudo no 
+                        Sangue. Suor. Respeito.</p>
+                    <span class="preco">R$ 79,99</span>
+                </div>
+
+                <div class="card">
+                    <img src="IMG/Produtos/4.png" alt="Produto 2">
+                    <h2>Robullst Shield Branco</h2>
+                    <p>A mente comanda. O boné acompanha. O Robullst Shield foi feito pra quem encara o mundo com foco, estilo e presença.
+                    Design limpo, essência bruta.</p>
+                    <span class="preco">R$ 119,99</span>
+                </div>
+
+                <div class="card">
+                    <img src="IMG/Produtos/5.png" alt="Produto 2">
+                    <h2>Robullst Shield Preto</h2>
+                    <p>A mente comanda. O boné acompanha. O Robullst Shield foi feito pra quem encara o mundo com foco, estilo e presença.
+                    Design limpo, essência bruta.</p>
+                    <span class="preco">R$ 119,99</span>
+                </div>
+            </div>
+        </main>
+</body>
