@@ -18,6 +18,8 @@ body {
     text-align: center;
 } 
 
+.video{width: 100% ;
+}
 
 /* Imagem centralizada */
 .img {
@@ -175,7 +177,7 @@ h2 {
 }
 
 .mapaGeral iframe {
-    width: 80%;
+    width: 100%;
     height: 300px;
     border: none;
     margin: 0 auto;
@@ -257,6 +259,7 @@ footer p {
     gap: 20px;
     padding-bottom: 20px;
     margin-top: 50px;
+    width: 100%;
 }
 
 /* Card de produto */
@@ -285,13 +288,11 @@ footer p {
 .card h2 {
     margin: 10px 0;
     color: rgba(255, 255, 255, 0.932);
-    background-color: rgba(0, 0, 0, 0.932);
     font-size: 30px;
 }
 
 .card p {
     color: rgba(255, 255, 255, 0.932);
-    background-color: rgba(0, 0, 0, 0.932);
     font-size: 14px;
 }
 
@@ -308,72 +309,17 @@ footer p {
 }
 
 
-.body_servicos{
+.body_produtos{
     background-color:rgba(255, 255, 255, 0.932);
 }
 
-.header_servicos{
-    width: 100%;
-    background-color: rgba(243, 168, 7, 0.932);
-}
 
-.logo_servicos{
+
+.logo_produtos{
     width: 100%;
     max-width: 200px;
     display: block; /* necessário para usar margin auto */
     margin: 0 auto;   
-}
-
-
-/*link agendamento*/
-.linkagendamento {
-    color: rgba(243, 168, 7, 0.932);
-}
-
-
-.body_agendamento{
-    background-color: rgba(243, 168, 7, 0.932);
-}
-
-.header_agendamento{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.932);
-}
-
-.logo_agendamento{
-    width: 100%;
-    max-width: 200px;
-    display: block; /* necessário para usar margin auto */
-    margin: 0 auto;   
-}
-
-.body_agendamento h2 {
-     flex: 1;
-    color: rgba(0, 0, 0, 0.932);
-    border: 4px solid rgba(0, 0, 0, 0.932);
-    /* cor e espessura do contorno */
-    padding: 20px;
-    /* espaço interno para o texto não encostar nas bordas */
-    border-radius: 8px;
-    /* cantos levemente arredondados (opcional) */
-    background-color: rgba(243, 168, 7, 0.932);
-    /* cor de fundo (opcional para destaque) */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    /* sombra leve para profundidade */
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.home-link-amarelo {
-    color: rgba(243, 168, 7, 0.932) !important; /*!important é uma prioridade máxima*/
-}
-
-.home-link-amarelo:hover {
-    color: white !important;
-}
-
-.p-agendamento{
-    font-size: 25px;
 }
 
 
