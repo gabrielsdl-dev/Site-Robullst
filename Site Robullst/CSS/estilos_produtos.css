@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo centralizada */
+.logo {
+    max-width:200px;
+    height: auto;
+    display: block;
+    margin-right: 80%;
+    z-index: 1;
+    text-align: center;
+} 
+
+.video{width: 100% ;
+}
+
+/* Imagem centralizada */
+.img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Header sem margens */
+header {
+    background-color: rgba(0, 0, 0, 0.932);
+    width: 100%;
+}
+
+/* Div do Header centralizada */
+.divHeader {
+    width: 100%;
+    text-align: center;
+}
+
+/* Menu*/
+/* Container flexível para header */
+.header-container {
+    display: flex;
+    justify-content: center; /* Centraliza a logo */
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.menu-principal {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.menu-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-principal li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu-principal a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: color 0.3s;
+}
+
+.menu-principal a:hover {
+    color: rgb(98, 96, 243);
+}
+
+.telefone{
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+.banner_rodape{
+    margin-top: -50px;
+}
+
+
+
+/* Container dos cards */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* Card de produto */
+.card {
+    background-color: rgba(0, 0, 0, 0.932);
+    border: 4px solid rgb(98, 96, 243);
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.932);
+    font-size: 30px;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.932);
+    font-size: 14px;
+}
+
+.preco {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.932);
+    margin: 10px 0;
+}
+
+/*link serviços*/
+.linkservicos {
+    color: rgba(243, 168, 7, 0.932);
+}
+
+
+.body_produtos{
+    background-color:rgba(255, 255, 255, 0.932);
+}
+
+
+
+.logo_produtos{
+    width: 100%;
+    max-width: 200px;
+    display: block; /* necessário para usar margin auto */
+    margin: 0 auto;   
+}
