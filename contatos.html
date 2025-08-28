@@ -23,7 +23,7 @@
     </header>
 </body>
 
-<body>
+
     <main>
         <div class="contatos_container">
 
@@ -40,11 +40,31 @@
             </div>
 
         </div>
+        <id="resultado" class="resultado-formulario">
+            <h2>Envie sua Mensagem</h2>
+            <form id="meuFormulario">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="idade">Idade:</label><br>
+                <input type="number" id="idade" name="idade"><br><br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+
     </main>
 
     <footer>
         <img src="IMG/ROBULLST.png" alt="lOGO PRETA" class="logo_rodape" />
     </footer>
+
 </body>
 
 </html>
