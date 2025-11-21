@@ -9,6 +9,12 @@
     <title>ROBULLST</title>
 </head>
 
+<!-- Botão flutuante do carrinho -->
+<a href="carrinho.html" class="btn-carrinho-flutuante">
+    <i class="fa fa-shopping-cart"></i>
+    <span class="contador-carrinho" id="contadorCarrinho">0</span>
+</a>
+
 <body>
 
     <!--Cabeçalho do Site-->
@@ -19,13 +25,12 @@
         <div class="menu">
             <nav>
                 <ul>
-                <li><a href="index.html">INÍCIO</a></li>
-                <li><a href="produtos.html">PRODUTOS</a></li>
-                <li><a href="contatos.html">CONTATOS</a></li>
-                <li><a href="encomendas.html">ENCOMENDAS</a></li>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="produtos.html">PRODUTOS</a></li>
+                    <li><a href="contatos.html">CONTATOS</a></li>
                 </ul>
             </nav>
-                
+
         </div>
     </header>
 
@@ -40,15 +45,18 @@
                 <h2>Robullst Echo</h2>
                 <p>Design ousado, essência bruta — feita pra quem vive o treino com atitude.</p>
                 <span class="preco">R$ 79,99</span>
+                <button class="btn-comprar"
+                    onclick="event.stopPropagation(); adicionarCarrinho('Robullst Echo', 79.99)">Comprar</button>
             </div>
 
             <div class="card"
                 onclick="abrirDetalhes('Robullst Athlete','IMG/Produtos/2.png','Eleve seu estilo nos treinos com a camisa Robullst Athlete. Desenvolvida para representar atitude, elegância e autenticidade, ela combina conforto com estilo. Modelagem moderna e tecido leve, é perfeita para o dia a dia ou para destacar sua presença em eventos.')">
                 <img src="IMG/Produtos/2.png" alt="Produto 2">
                 <h2>Robullst Athlete</h2>
-                <p>Estilo que fala por si. A Robullst Athlete une atitude e tradição em uma estampa marcante. Feita para
-                    quem carrega força e autenticidade em cada movimento.</p>
+                <p>Estilo que fala por si. A Robullst Athlete une atitude e tradição em uma estampa marcante. Feita para quem carrega força e autenticidade em cada movimento.</p>
                 <span class="preco">R$ 79,99</span>
+                <button class="btn-comprar"
+                    onclick="event.stopPropagation(); adicionarCarrinho('Robullst Athlete', 79.99)">Comprar</button>
             </div>
 
             <div class="card"
@@ -58,6 +66,8 @@
                 <p>A Robullst Creed carrega o código de quem constrói tudo no
                     Sangue. Suor. Respeito.</p>
                 <span class="preco">R$ 79,99</span>
+                <button class="btn-comprar"
+                    onclick="event.stopPropagation(); adicionarCarrinho('Robullst Creed', 79.99)">Comprar</button>
             </div>
 
             <div class="card"
@@ -68,15 +78,20 @@
                     estilo e presença.
                     Design limpo, essência bruta.</p>
                 <span class="preco">R$ 69,99</span>
+                <button class="btn-comprar"
+                    onclick="event.stopPropagation(); adicionarCarrinho('Robullst Shield Branco', 69.99)">Comprar</button>
             </div>
 
             <div class="card"
+                onclick="abrirDetalhes('Robullst Shield Preto','IMG/Produtos/5.png','Robullst Shield Preto é mais que um acessório — é uma declaração de presença. Com design minimalista e o nome em destaque, ele combina perfeitamente com qualquer look urbano ou esportivo. Feito com materiais de alta qualidade, oferece conforto, ajuste firme e durabilidade para acompanhar sua rotina com atitude. Ideal para quem não passa despercebido.')">
                 <img src="IMG/Produtos/5.png" alt="Produto 2">
                 <h2>Robullst Shield Preto</h2>
                 <p>A mente comanda. O boné acompanha. O Robullst Shield foi feito pra quem encara o mundo com foco,
                     estilo e presença.
                     Design limpo, essência bruta.</p>
                 <span class="preco">R$ 69,99</span>
+                <button class="btn-comprar"
+                    onclick="event.stopPropagation(); adicionarCarrinho('Robullst Shield Preto', 69.99)">Comprar</button>
             </div>
         </div>
     </main>
@@ -95,6 +110,9 @@
         <br></br>
         <p>© 2025 ROBULLST. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="JS/CARRINHO/addCarrinho.js"></script>
+    <script src="JS/CARRINHO/contadorCarrinho.js"></script>
 </body>
 
 </html>

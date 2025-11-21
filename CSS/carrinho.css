@@ -1,8 +1,9 @@
 body {
     margin: 0;
-    font-family:'Franklin Gothic Medium', sans-serif;
-    background-color: #000000;
+    padding: 0;
+    background-color: #000;
     color: white;
+    font-family: 'Franklin Gothic Medium', sans-serif;
 }
 
 header {
@@ -90,116 +91,38 @@ nav a:hover{
 }
 
 
-/*ENCOMENDAS*/
-.encomendas-titulo h2{
-    color: #ffffff;
+.titulo {
     text-align: center;
-    margin-top: 100px;
-}
-/*TABELA*/
-
-table{
-    width: 100%;
-    margin-bottom: 2%;
-    table-layout: fixed;
-}
-
-th{
-    font-weight: bold;
-    background-color: rgb(192, 165, 85);;
+    margin-top: 50px;
+    font-size: 32px;
     color: white;
 }
 
-td, th{
-    padding: 10px;
-    margin: 0;
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 50px auto;
+    font-size: 18px;
+}
+
+th {
+    background-color: rgb(192, 165, 85);
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+td {
     border: 1px solid rgb(192, 165, 85);
+    padding: 10px;
     text-align: center;
 }
 
-h2{
+.total-geral {
     text-align: center;
-    
-}
-
-
-/*Estilização das informações inválidas*/
-.info_invalida {
-    background-color: red;
-    color: white;
-}
-.info-invalida2 {
-    color: red;
-}
-
-/*Formulário*/
-.container{
-	width: 100%;
-	margin: 0 auto;
-}
-label{
-	color:rgb(192, 165, 85);
-	display: block;
-	margin-bottom: .2em;
-}
-
-.campo{
-	margin: 0;
-	padding-bottom: 1em;
-	width: 90%;
-	border: 1px solid rgb(192, 165, 85);
-	padding: .7em;
-    font-family: cursive;
-}
-
-.campo-medio{
-	display: inline-block;
-	padding-right: .5em;
-}
-
-option:hover {
-	color:rgb(192, 165, 85);
-}
-
-.grupo{
-	width: 32%;
-	display: inline-block;
-	padding: 10px 0px;
-}
-
-.bto-principal{
-	padding: .5em 2em;
-	border: 100;
-	border-bottom: 3px solid;
-	font-size: 1.2em;
-    font-family: cursive;
-	cursor: pointer;
-	margin: 0;
-	margin-top: -3px;
-	color: rgb(0, 0, 0);
-	background-color:rgb(192, 165, 85);;
-	width: 20%;
-    display: block;
-    clear: both;
-    margin: 10px 0px;
-}
-
-/*Efeito para linha sumir quando excluída*/
-.fadeOut{
-    opacity: 0;
-    transition: 1s;
-}
-
-/*Campo de busca*/
-#filtrar-tabela{
-    width: 19.5%;
-    height: 35px;
-    margin-bottom: 10px;
-}
-
-/*Esconde a linha para a busca*/
-.invisivel {
-    display: none;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgb(192, 165, 85);
 }
 
 
@@ -334,4 +257,118 @@ footer a i.fa-instagram:hover {
     background-color: #000000;
     margin: 40px auto 0;
     border-radius: 3px;
+}
+
+
+/* Estilo do input de quantidade */
+#tabelaCarrinho input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+
+    background-color: #111;
+    color: white;
+
+    border: 2px solid rgb(192, 165, 85);
+    border-radius: 6px;
+
+    outline: none;
+    transition: 0.2s ease;
+}
+
+/* Efeito quando clica */
+#tabelaCarrinho input[type="number"]:focus {
+    border-color: white;
+    box-shadow: 0 0 6px rgba(192, 165, 85, 0.8);
+}
+
+/* Estilo ao passar o mouse */
+#tabelaCarrinho input[type="number"]:hover {
+    transform: scale(1.05);
+}
+
+.btn-remover {
+    background-color: #b30909;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.btn-remover:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.05);
+}
+
+
+/* Botão finalizar */
+.btn-finalizar {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background-color: rgb(192, 165, 85);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-finalizar:hover {
+    background-color: white;
+}
+
+/* Formulário */
+.form-endereco {
+    display: none;
+    background-color: #111;
+    padding: 25px;
+    margin: 30px auto;
+    width: 60%;
+    border-radius: 12px;
+    border: 2px solid rgb(192, 165, 85);
+}
+
+.form-endereco h2 {
+    text-align: center;
+    color: rgb(192, 165, 85);
+}
+
+.form-endereco label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.form-endereco input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 3px;
+    border-radius: 6px;
+    border: 1px solid rgb(192, 165, 85);
+    background-color: #000;
+    color: white;
+}
+
+/* Botão enviar */
+.btn-enviar {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: #25D366;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-enviar:hover {
+    background-color: #1dd45a;
 }

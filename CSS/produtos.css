@@ -226,3 +226,79 @@ footer a i.fa-instagram:hover {
     display: block; /* necessário para usar margin auto */
     margin: 0 auto;   
 }
+
+/*BOTÃO COMPRAR*/
+.btn-comprar {
+    margin-top: 10px;
+    padding: 10px 15px;
+    width: 100%;
+    background-color: rgb(192, 165, 85);
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/*botão para acessae o carrinho*/
+/* Botão flutuante do carrinho */
+.btn-carrinho-flutuante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 65px;
+    height: 65px;
+
+    background-color: rgb(192, 165, 85);
+    color: black;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    text-decoration: none;
+
+    box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.btn-carrinho-flutuante:hover {
+    background-color: white;
+    transform: scale(1.12);
+}
+
+
+/* Contador do carrinho (bolinha vermelha) */
+.contador-carrinho {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    background-color: #b30909;
+    color: white;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid black;
+}
