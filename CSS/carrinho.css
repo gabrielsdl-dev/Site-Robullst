@@ -91,11 +91,12 @@ nav a:hover{
 }
 
 
+/*==========Tabela ==========*/
 .titulo {
     text-align: center;
     margin-top: 50px;
     font-size: 32px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 table {
@@ -106,13 +107,14 @@ table {
 }
 
 th {
-    background-color: rgb(192, 165, 85);
+    background-color: rgb(255, 255, 255);
+    color: black;
     padding: 12px;
     text-transform: uppercase;
 }
 
 td {
-    border: 1px solid rgb(192, 165, 85);
+    border: 1px solid rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
 }
@@ -331,7 +333,7 @@ footer a i.fa-instagram:hover {
     margin: 30px auto;
     width: 60%;
     border-radius: 12px;
-    border: 2px solid rgb(192, 165, 85);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .form-endereco h2 {
@@ -350,7 +352,7 @@ footer a i.fa-instagram:hover {
     padding: 8px;
     margin-top: 3px;
     border-radius: 6px;
-    border: 1px solid rgb(192, 165, 85);
+    border: 1px solid rgb(255, 255, 255);
     background-color: #000;
     color: white;
 }
@@ -360,7 +362,7 @@ footer a i.fa-instagram:hover {
     margin-top: 20px;
     padding: 12px;
     width: 100%;
-    background-color: #25D366;
+    background-color: rgb(192, 165, 85);
     border: none;
     border-radius: 8px;
     font-size: 18px;
@@ -370,5 +372,11 @@ footer a i.fa-instagram:hover {
 }
 
 .btn-enviar:hover {
-    background-color: #1dd45a;
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(192, 165, 85);
 }
