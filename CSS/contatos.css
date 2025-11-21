@@ -1,0 +1,229 @@
+
+/*Estilização do corpo do site*/
+body {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', sans-serif;
+    background-color: #ffffff;
+    color: white;
+}
+
+/*Estilização do Cabeçalho do Site*/
+header {
+    background-color: #000000;
+    color: bisque;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.logo-header{
+    width: 15%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-family: 'Sage', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/*============== Estilização do Menu =================*/
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 50px; /*Espaçamento lateral*/
+    padding: 10px 20px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    box-shadow: 0 2px 6px rgb(0, 0, 0);
+    border-radius: 4px;
+
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li{
+    margin:0 20px;
+}
+
+/*Animação do Menu*/
+nav a:hover {
+    color:rgb(192, 165, 85);
+    transform: scale(1.1);
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/*Efeito de sublinhado*/
+nav a::after{
+    content:'';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s;
+
+}
+
+/*hover ativo */
+nav a:hover::after, .nav a.active::after{
+    width: 100%;
+
+}
+
+/*Mudança de cor do hover*/
+nav a:hover{
+    color:rgb(192, 165, 85);
+}
+
+
+
+
+/*Estilização Rodapé do Site*/
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centraliza tudo */
+    justify-content: center;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: b;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* 🔹 Logo maior e centralizada */
+.logo{
+    width: 300px;
+    /* ajuste o tamanho como quiser */
+    height: auto;
+    margin: 20px 0;
+    display: block;
+}
+
+/* Ícone do Instagram */
+/* Ícone do Instagram maior e centralizado no rodapé */
+footer a i.fa-instagram {
+    font-size: 50px !important;
+    /* aumenta o tamanho */
+    color: black;
+    margin-top: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+footer a i.fa-instagram:hover {
+    color:rgb(192, 165, 85);
+    transform: scale(1.15);
+}
+
+
+/*Containers Compre*/
+.contatos_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contato_card {
+    background-color: #ffffff;
+    /* mesma cor escura usada no produto */
+    color: white;
+    border: 4px solid rgb(192, 165, 85);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contato_card p{
+    color:rgb(0, 0, 0);
+}
+.contato_card:hover {
+    transform: scale(1.05);
+    background-color: #ffffff;
+    /* leve mudança na cor no hover */
+}
+
+.contato_card h3 {
+    margin-top: 0;
+    color: rgb(0, 0, 0);
+    /* destaque amarelo parecido */
+    text-align: center;
+}
+
+.contato_card p {
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: center;
+}
+.fa-whatsapp:before {
+    content: "\f232";
+    color: black;
+}
+
+.fa-instagram:before {
+    content: "\f232";
+    color: black;
+}
+.fa-map-marker:before{
+    content: "\f232";
+    color: rgb(0, 0, 0);
+}
+.fa-envelope:before{
+    content: "\f232";
+    color: rgb(0, 0, 0);
+}
+.fa-whatsapp-contato:before {
+    content: "\f232";
+    color: rgb(0, 0, 0);
+}
+
+.instagram-container{
+    color: rgb(192, 165, 85)
+}
+
+.linha {
+    content: "";
+    display: block;
+    width: 900px;
+    height: 4px;
+    background-color: #000000;
+    margin: 40px auto 0;
+    border-radius: 3px;
+}
