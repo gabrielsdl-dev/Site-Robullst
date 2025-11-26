@@ -53,7 +53,7 @@ nav li{
 
 /*Animação do Menu*/
 nav a:hover {
-    color:rgb(192, 165, 85);
+    color:rgb(0, 0, 0);
     transform: scale(1.1);
 }
 
@@ -91,6 +91,10 @@ nav a:hover{
 
 
 
+.video{
+    width: 100% ;
+    margin-top: -100px;
+}
 
 .container {
     max-width: 900px;
